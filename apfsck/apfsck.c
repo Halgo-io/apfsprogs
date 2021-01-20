@@ -89,7 +89,7 @@ void report_crash(const char *context)
 void report_unknown(const char *feature)
 {
 	if (options & OPT_REPORT_UNKNOWN)
-		report(feature, "not supported.");
+		printf("%s: not supported.\n", feature);
 }
 
 /**
